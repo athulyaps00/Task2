@@ -1,0 +1,258 @@
+/* General Reset and Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Section */
+header {
+  background-color: #0c5166; /* Green Background */
+  color: white;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Vertically center the items */
+}
+
+/* Container that wraps all header content */
+.container {
+  width: 90%; /* Container width */
+  max-width: 1200px; /* Max width */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Distribute left and right content */
+  align-items: center;
+}
+
+/* Left Header Section (Welcome Text) */
+.header-left {
+  flex: 1; /* Left section takes up remaining space */
+}
+
+.header-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header-left p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+.header-right nav {
+  display: flex;
+}
+
+.header-right a {
+  color: white;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header-right a:hover {
+  color: #f1f1f1;
+  background-color: #333; /* Dark background on hover */
+  transform: scale(1.1); /* Slightly grow the link */
+}
+
+/* Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main Content Section */
+.container {
+  text-align: center;
+  padding: 50px 15px;
+}
+
+.container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+
+body {
+  margin: 0;
+  font-family: Open-sans, sans-serif;
+}
+h1, h2, h3 {
+  font-family: Raleway, Helvetica, sans-serif;
+}
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.padded {
+  padding: 100px 0;
+}
+.wrapper-grey {
+  background: #F4F4F4;
+}
+.avatar {
+  width: 30px;
+  border-radius: 50%;
+}
+.avatar-bordered {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+}
+.avatar-large {
+  width: 20px;
+}
+
+/*card*/
+.card {
+  height: 250px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  color: white;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 22px;
+}
+.card-description p {
+  font-size: 15px;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover{
+  opacity: 0.1;
+}
+.features img {
+  width: 100px;
+}
+.features h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.features p {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+/*form*/
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 30px; /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px; /* Added max-width to prevent stretching */
+  margin: 0 auto; /* Center the form */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+}
+label {
+  margin-bottom: 10px; /* Add space below the label */
+}
+
+input {
+  padding: 10px; /* Increased padding for better readability */
+  width: 100%; /* Full width of the form */
+  max-width: 400px; /* Limit the input field width */
+  text-align: center;
+}
+
+.btn {
+  padding: 15px 30px; /* Adjusted button size */
+  font-size: 16px;
+  cursor: pointer;
+}
+.info {background-color: #97bce4;} /* Blue */
+.info:hover {background: #0b7dda;}
+/*about*/
+.about .row {
+  display: flex;
+  align-items: center;
+  background: var(--black);
+  flex-wrap: wrap;
+}
+.about .row .image 
+{
+  flex: 1 1 60rem;
+}
+.about .row .image img 
+{
+  width: 100%;
+}
+.about .row .content
+{
+ flex: 1 1 45rem;
+ padding: 2rem;
+}
+  .about .row .content h3 {
+      font-size: 3rem;
+      color: #020202;
+  }
+  .about .row .content p {
+      font-size: 1.6rem;
+      color: #46c7ee;
+      padding: 1rem 0;
+      line-height: 1.8;
+  }
+  section
+{
+    padding: 3rem 7%;
+}
+.heading {
+    text-align: center;
+    color: #2d6899;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+ .heading span
+ {
+        color: var(--main-color);
+ }
+
+/* Footer Section */
+footer {
+  background-color: #333; /* Dark background for the footer */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container p {
+  font-size: 1rem;
+}
+/* footer ends*/
